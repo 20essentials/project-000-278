@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkanoid Game</title>
+    <meta name="google" content="notranslate" />
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas width="380" height="420"></canvas>
+    <aside class="container-pad">
+      <button class="pad pad-left">
+        <div class="triangle"></div>
+      </button>
+      <button class="pad pad-right">
+        <div class="triangle"></div>
+      </button>
+    </aside>
+    <dialog>
+      <div class="container-modal">
+        <h2 class="message">You Lost <span>👽</span></h2>
+        <button class="button-play-again">Play again</button>
+      </div>
+    </dialog>
+    <img
+      class="general-sprite"
+      hidden
+      src="assets/arkanoid-sprite.png"
+      alt="arkanoid sprite"
+    />
+    <img
+      class="bricks-sprite"
+      hidden
+      src="assets/bricks-sprite.png"
+      alt="bricks sprite"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>
